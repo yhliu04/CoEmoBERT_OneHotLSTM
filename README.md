@@ -31,3 +31,39 @@
 
 ## Reference
 https://github.com/adlnlp/StockEmotions/tree/main
+
+
+
+# Predicting Stock Trend Changes through Public Sentiment Analysis and Multivariate Time Series Regression
+
+## Introduction
+In the financial market, stock price fluctuations are influenced not only by economic data and market trends but also by investor sentiment and public opinion. To more accurately predict stock price changes, we propose a method that combines public sentiment analysis and multivariate time series regression. Our project aims to establish a comprehensive dataset and develop a multivariate time series prediction model to forecast future stock trends.
+
+### Data Sources
+Our dataset primarily comes from two platforms:
+1. **StockTwits**: A social media platform focused on stocks and trading, where users share their opinions and sentiments about stocks. We extract text data for sentiment analysis from this platform.
+2. **Yahoo Finance**: A platform that provides stock prices, financial statements, and market data. We obtain time series data of stock prices from this source.
+
+### Model Overview
+Our approach includes the following steps:
+1. **Sentiment Analysis**:
+   - Using the BERT model to process user comments on StockTwits and extract sentiment vectors. These vectors represent the sentiment distribution of users towards a particular stock, such as optimistic, pessimistic, or neutral.
+   - Transforming these sentiment vectors into a format suitable for time series analysis.
+
+2. **Time Series Data Processing**:
+   - Collecting historical stock price data, including open price, close price, high price, low price, and trading volume.
+   - Preprocessing and normalizing the data to ensure its suitability for the subsequent modeling process.
+
+3. **Multivariate Time Series Prediction Model**:
+   - Designing and training a Long Short-Term Memory (LSTM) network capable of handling time series data and capturing long-term dependencies.
+   - Combining the extracted sentiment vectors with historical stock price data as inputs to the LSTM model to predict the next time point's stock price.
+
+4. **Model Validation and Evaluation**:
+   - Using cross-validation and rolling prediction methods to validate the model's performance, ensuring its stability and accuracy over different time periods.
+   - Evaluating the prediction results and comparing them with traditional prediction methods to verify the model's advantages.
+
+### Applications and Prospects
+By integrating sentiment analysis with time series prediction, our model can more accurately capture the impact of market sentiment on stock prices. This approach can be applied not only to stock price prediction but also to other financial products, such as futures, forex, and cryptocurrencies.
+
+## Reference
+https://github.com/adlnlp/StockEmotions/tree/main
