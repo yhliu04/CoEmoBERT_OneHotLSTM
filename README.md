@@ -46,7 +46,7 @@ Our approach includes the following steps:
    - Utilize NLP techniques and large language models to process user comments on StockTwits, extracting sentiment vectors. These vectors represent the distribution of user sentiments towards a specific stock, such as optimistic, pessimistic, or neutral.
    - Transform these sentiment vectors into a form suitable for time series analysis.
 
-2. **Numerical Data Processing and Model Prediction:**:
+2. **Numerical Data Processing and Model Prediction**:
    - Obtain historical price data for the target stock over a certain period, including opening price, closing price, highest price, lowest price, and trading volume.
    - Combine the extracted sentiment vectors with the stock’s historical price data to train a time series prediction model for stock price forecasting.
 
